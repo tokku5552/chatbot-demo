@@ -15,6 +15,18 @@ export default class App extends React.Component {
     };
   }
 
+  initAnswer = () => {
+    const initDataset = this.state.dataset[this.state.currentId];
+    const initAnswers = initDataset.answers;
+    this.setState({
+      answers: initAnswers,
+    });
+  };
+
+  componentDidMount() {
+    this.initAnswer();
+  }
+
   render() {
     return (
       <section className="c-section">

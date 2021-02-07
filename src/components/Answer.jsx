@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 // import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -10,12 +11,12 @@ import Button from '@material-ui/core/Button';
 //   },
 // }));
 // 連携テスト
-const Answer = () => {
+const Answer = (props) => {
   //const classes = useStyles();
 
   return (
     <Button variant="contained" color="primary">
-      Default
+      {props.content}
     </Button>
   );
 };
