@@ -1,5 +1,5 @@
 import React from 'react';
-import './assets/style.css'
+import './assets/style.css';
 import defaultDataset from './dataset';
 
 export default class App extends React.Component {
@@ -8,20 +8,17 @@ export default class App extends React.Component {
     this.state = {
       answers: [],
       chats: [],
-      currentId: "init",
+      currentId: 'init',
       dataset: defaultDataset,
-      open: false
-    }
+      open: false,
+    };
   }
 
   render() {
     return (
       <section className="c-section">
-        <div className="c-box">
-
-        </div>
+        <div className="c-box"></div>
       </section>
     );
   }
 }
-
