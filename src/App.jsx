@@ -1,5 +1,6 @@
 import React from 'react';
 import './assets/style.css';
+import { AnswersList } from './components/index';
 import defaultDataset from './dataset';
 
 export default class App extends React.Component {
@@ -17,7 +18,9 @@ export default class App extends React.Component {
   render() {
     return (
       <section className="c-section">
-        <div className="c-box"></div>
+        <div className="c-box">
+          <AnswersList />
+        </div>
       </section>
     );
   }
